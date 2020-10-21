@@ -18,17 +18,14 @@ class MainActivity : AppCompatActivity() {
 
         val makeChocolateSnack = SnackFactory().makeSnack(SnackType.CHOCOLATE_SNACK)
 
-        Log.d("In MainActivity : ", makeChocolateSnack!!.snackName )
-        makeChocolateSnack.printResult
+        makeChocolateSnack?.printResult
 
         val makeOnionSnack = SnackFactory().makeSnack(SnackType.ONION_SNACK)
 
-        Log.d("In MainActivity : ", makeOnionSnack!!.snackName )
-        makeOnionSnack.printResult
+        makeOnionSnack?.printResult
 
         val makePhotatoSnack = SnackFactory().makeSnack(SnackType.POTATO_SNACK)
 
-        Log.d("In MainActivity : ", makePhotatoSnack!!.snackName )
-        makePhotatoSnack.printResult
+        makePhotatoSnack?.printResult
     }
 }
